@@ -5,18 +5,19 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeroenkruis/documark-sass.git"
+    "url": "https://github.com/jeroenkruis/dmp-sass.git"
   },
   "keywords": [
     "documark",
-    "sass"
+    "sass",
+    "plugin"
   ],
   "author": "Jeroen Kruis <kruisjeroen@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jeroenkruis/documark-sass/issues"
+    "url": "https://github.com/jeroenkruis/dmp-sass/issues"
   },
-  "homepage": "https://github.com/jeroenkruis/documark-sass",
+  "homepage": "https://github.com/jeroenkruis/dmp-sass",
   "dependencies": {
     "node-sass": "^2.0.1"
   }

@@ -14,7 +14,7 @@ module.exports = function dmpSass ($, document, done) {
       document.config().pdf.userStyleSheet = 'file://' + cache.filePath('sass-cache.css');
 
       file.end(result.css);
-      },
+    },
     error: function (error) {
       console.log(error.message);
     }

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jeroenkruis/dmp-sass",
   "dependencies": {
-    "node-sass": "^2.0.1"
+    "node-sass": "^2.0.1",
+    "documark-cache": "^0.2.0"
   }
 }

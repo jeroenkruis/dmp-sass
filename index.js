@@ -12,7 +12,7 @@ module.exports = function dmpSass ($, document, done) {
       var file = cache.fileWriteStream('sass-cache.css');
       file.end(result.css);
 
-      $.root().append('<link rel="stylesheet" type="text/css" href="'   '">');
+      $.root().append('<link rel="stylesheet" type="text/css" href="' + cache.filePath('sass-cache.css') + '">');
     },
     error: function (error) {
       console.log(error.message);

@@ -1,7 +1,7 @@
 {
   "name": "dmp-sass",
   "version": "0.1.0",
-  "description": "Sass support for Documark",
+  "description": "Sass support for Documark.",
   "main": "index.js",
   "repository": {
     "type": "git",

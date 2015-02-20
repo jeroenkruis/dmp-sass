@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.5.0
+3 info using node@v0.10.32
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jeroenkruis/Documents/workspace/documark/dmp-sass',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jeroenkruis/.npm/dmp-sass/0.2.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/jeroenkruis/.npm/dmp-sass/0.2.0/package.tgz',
+9 verbose tar pack   '/Users/jeroenkruis/Documents/workspace/documark/dmp-sass' ]
+10 verbose tarball /Users/jeroenkruis/.npm/dmp-sass/0.2.0/package.tgz
+11 verbose folder /Users/jeroenkruis/Documents/workspace/documark/dmp-sass
+12 info prepublish dmp-sass@0.2.0
+13 verbose addLocalTarball adding from inside cache /Users/jeroenkruis/.npm/dmp-sass/0.2.0/package.tgz
+14 silly cache afterAdd dmp-sass@0.2.0
+15 verbose afterAdd /Users/jeroenkruis/.npm/dmp-sass/0.2.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/jeroenkruis/.npm/dmp-sass/0.2.0/package/package.json written
+17 silly publish { name: 'dmp-sass',
+17 silly publish   version: '0.2.0',
+17 silly publish   description: 'Sass support for Documark.',
+17 silly publish   main: 'index.js',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/jeroenkruis/dmp-sass.git' },
+17 silly publish   keywords: [ 'documark', 'documark-plugin', 'plugin', 'sass' ],
+17 silly publish   author: { name: 'Jeroen Kruis', email: 'kruisjeroen@gmail.com' },
+17 silly publish   license: 'MIT',
+17 silly publish   bugs: { url: 'https://github.com/jeroenkruis/dmp-sass/issues' },
+17 silly publish   homepage: 'https://github.com/jeroenkruis/dmp-sass',
+17 silly publish   dependencies: { 'node-sass': '^2.0.1', 'documark-cache': '^0.2.0' },
+17 silly publish   gitHead: '379a9b1fba569ad0cdb69f18acb7937f476b2a3a',
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   _id: 'dmp-sass@0.2.0',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: '8bf18fdb74b755a121b01cd1286ad582fb9172af',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name dmp-sass
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/dmp-sass
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/jeroenkruis/.npm/dmp-sass/0.2.0/package.tgz
+24 verbose request uri https://registry.npmjs.org/dmp-sass
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 10:37:33
+27 verbose request id aa94c5b1a2ca3cd0
+28 http request PUT https://registry.npmjs.org/dmp-sass
+29 http 403 https://registry.npmjs.org/dmp-sass
+30 verbose headers { date: 'Fri, 20 Feb 2015 09:37:34 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=60',
+30 verbose headers   'content-length': '2313',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'x-served-by': 'cache-fra1229-FRA',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1424425053.381045,VS0,VE683',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 verbose request invalidating /Users/jeroenkruis/.npm/registry.npmjs.org/dmp-sass on PUT
+32 error publish Failed PUT 403
+33 verbose stack Error: forbidden cannot modify pre-existing version: 0.2.0
+33 verbose stack old={"name":"dmp-sass","version":"0.2.0","description":"Sass support for Documark.","main":"index.js","repository":{"type":"git","url":"https://github.com/jeroenkruis/dmp-sass.git"},"keywords":["documark","documark-plugin","plugin","sass"],"author":{"name":"Jeroen Kruis","email":"kruisjeroen@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/jeroenkruis/dmp-sass/issues"},"homepage":"https://github.com/jeroenkruis/dmp-sass","dependencies":{"node-sass":"^2.0.1","documark-cache":"^0.2.0"},"gitHead":"379a9b1fba569ad0cdb69f18acb7937f476b2a3a","_id":"dmp-sass@0.2.0","scripts":{},"_shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.32","_npmUser":{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"},"maintainers":[{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"}],"dist":{"shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","tarball":"http://registry.npmjs.org/dmp-sass/-/dmp-sass-0.2.0.tgz"}}
+33 verbose stack new={"name":"dmp-sass","version":"0.2.0","description":"Sass support for Documark.","main":"index.js","repository":{"type":"git","url":"https://github.com/jeroenkruis/dmp-sass.git"},"keywords":["documark","documark-plugin","plugin","sass"],"author":{"name":"Jeroen Kruis","email":"kruisjeroen@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/jeroenkruis/dmp-sass/issues"},"homepage":"https://github.com/jeroenkruis/dmp-sass","dependencies":{"node-sass":"^2.0.1","documark-cache":"^0.2.0"},"gitHead":"379a9b1fba569ad0cdb69f18acb7937f476b2a3a","readme":"ERROR: No README data found!","_id":"dmp-sass@0.2.0","scripts":{},"_shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.32","_npmUser":{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"},"maintainers":[{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"}],"dist":{"shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","tarball":"http://registry.npmjs.org/dmp-sass/-/dmp-sass-0.2.0.tgz"}}: dmp-sass
+33 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
+33 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+33 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:373:22)
+33 verbose stack     at Request.emit (events.js:98:17)
+33 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+33 verbose stack     at Request.emit (events.js:117:20)
+33 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+33 verbose stack     at IncomingMessage.emit (events.js:117:20)
+33 verbose stack     at _stream_readable.js:943:16
+33 verbose stack     at process._tickCallback (node.js:419:13)
+34 verbose statusCode 403
+35 verbose pkgid dmp-sass
+36 verbose cwd /Users/jeroenkruis/Documents/workspace/documark/dmp-sass
+37 error Darwin 14.1.0
+38 error argv "node" "/usr/local/bin/npm" "publish"
+39 error node v0.10.32
+40 error npm  v2.5.0
+41 error code E403
+42 error forbidden cannot modify pre-existing version: 0.2.0
+42 error old={"name":"dmp-sass","version":"0.2.0","description":"Sass support for Documark.","main":"index.js","repository":{"type":"git","url":"https://github.com/jeroenkruis/dmp-sass.git"},"keywords":["documark","documark-plugin","plugin","sass"],"author":{"name":"Jeroen Kruis","email":"kruisjeroen@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/jeroenkruis/dmp-sass/issues"},"homepage":"https://github.com/jeroenkruis/dmp-sass","dependencies":{"node-sass":"^2.0.1","documark-cache":"^0.2.0"},"gitHead":"379a9b1fba569ad0cdb69f18acb7937f476b2a3a","_id":"dmp-sass@0.2.0","scripts":{},"_shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.32","_npmUser":{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"},"maintainers":[{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"}],"dist":{"shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","tarball":"http://registry.npmjs.org/dmp-sass/-/dmp-sass-0.2.0.tgz"}}
+42 error new={"name":"dmp-sass","version":"0.2.0","description":"Sass support for Documark.","main":"index.js","repository":{"type":"git","url":"https://github.com/jeroenkruis/dmp-sass.git"},"keywords":["documark","documark-plugin","plugin","sass"],"author":{"name":"Jeroen Kruis","email":"kruisjeroen@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/jeroenkruis/dmp-sass/issues"},"homepage":"https://github.com/jeroenkruis/dmp-sass","dependencies":{"node-sass":"^2.0.1","documark-cache":"^0.2.0"},"gitHead":"379a9b1fba569ad0cdb69f18acb7937f476b2a3a","readme":"ERROR: No README data found!","_id":"dmp-sass@0.2.0","scripts":{},"_shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.32","_npmUser":{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"},"maintainers":[{"name":"jeroenkruis","email":"kruisjeroen@gmail.com"}],"dist":{"shasum":"8bf18fdb74b755a121b01cd1286ad582fb9172af","tarball":"http://registry.npmjs.org/dmp-sass/-/dmp-sass-0.2.0.tgz"}}: dmp-sass
+43 error If you need help, you may report this error at:
+43 error     <http://github.com/npm/npm/issues>
+44 verbose exit [ 1, true ]

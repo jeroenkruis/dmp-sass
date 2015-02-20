@@ -1,6 +1,6 @@
 {
   "name": "dmp-sass",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sass support for Documark.",
   "main": "index.js",
   "repository": {
@@ -9,8 +9,9 @@
   },
   "keywords": [
     "documark",
-    "sass",
-    "plugin"
+    "documark-plugin",
+    "plugin",
+    "sass"
   ],
   "author": "Jeroen Kruis <kruisjeroen@gmail.com>",
   "license": "MIT",

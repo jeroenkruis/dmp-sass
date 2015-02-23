@@ -1,4 +1,6 @@
 # dmp-sass
+[![npm version](https://badge.fury.io/js/dmp-sass.svg)](http://badge.fury.io/js/dmp-sass)
+[![dependency status](https://david-dm.org/jeroenkruis/dmp-sass.svg)](https://david-dm.org/jeroenkruis)
 Get Sassy with dmp-sass for [Documark](https://github.com/mauvm/documark)!
 
 ## Usage

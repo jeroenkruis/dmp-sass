@@ -5,7 +5,7 @@
 Get Sassy with dmp-sass for [Documark](https://github.com/mauvm/documark)!
 
 ## Usage
-1. Include the plugin in document.jade
+1. Include the plugin in the [front-matter](https://github.com/jxson/front-matter) section of the document.jade
     ```yaml
     plugins:
       - dmp-sass

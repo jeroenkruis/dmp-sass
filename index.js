@@ -5,13 +5,13 @@ var cacheHelper = require('documark-cache');
 
 module.exports = function dmpSass ($, document, done) {
   sass.render({
-    file: 'assets/css/style.scss',
+    file: 'assets/css/base.scss',
     outputStyle: 'compressed',
     sourceMap: false,
     success: function (result) {
       var cache = cacheHelper(document);
       var file = cache.fileWriteStream('sass-cache.css');
-      var container = $.('head');
+      var container = $('head');
 
       if ( !container.length ) {
         container = $.root();

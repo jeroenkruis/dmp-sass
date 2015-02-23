@@ -4,13 +4,11 @@
 
 Get Sassy with dmp-sass for [Documark](https://github.com/mauvm/documark)!
 
+This plugin adds support for Sass.
+
 ## Usage
-1. Include the plugin in the [front-matter](https://github.com/jxson/front-matter) section of the document.jade
-    ```yaml
-    plugins:
-      - dmp-sass
-    ```
-2. Create a `style.scss` file inside `assets/css/`
+1. Include the plugin in the [front-matter](https://github.com/jxson/front-matter) section of the document.jade file
+2. Create a `base.scss` file inside `assets/css/`
 3. Get [Sassy](http://sass-lang.com/guide)
 
 ## Notes

@@ -18,4 +18,10 @@ This plugin adds support for Sass.
 3. Get [Sassy](http://sass-lang.com/guide)
 
 ## Notes
-Make sure you insert the plugin before the documark-page-meta executes, otherwise the css will not be added to the document. Usually theme's for Documark will use this plugin.
+Make sure you insert the plugin before the [documark-page-meta](https://github.com/mauvm/documark-page-meta) plugin executes, otherwise the css will not be added to the document. Usually theme's for Documark will use this plugin. The code below serves as an example on how to accomplish this.
+
+```yaml
+plugins:
+	- dmp-sass
+	- documark-theme-default
+```

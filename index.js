@@ -1,5 +1,3 @@
-var fs          = require('fs');
-var path        = require('path');
 var sass        = require('node-sass');
 var cacheHelper = require('documark-cache');
 
@@ -9,21 +7,20 @@ module.exports = function dmpSass ($, document, done) {
     outputStyle: 'compressed',
     sourceMap: false,
     success: function (result) {
-      var cache = cacheHelper(document);
-      var file = cache.fileWriteStream('sass-cache.css');
-      var container = $('head');
+      var file       = cacheHelper(document).fileWriteStream('dmp-sass.css');
+      var $container = $('head');
 
-      if ( !container.length ) {
-        container = $.root();
+      if ( ! $container.length) {
+        $container = $.root();
       }
 
       file.end(result.css);
-      container.append('<link rel="stylesheet" type="text/css" href="' + cache.filePath('sass-cache.css') + '">');
+      $container.append('<link rel="stylesheet" type="text/css" href="file://' + file.path + '"/>');
 
       done();
     },
-    error: function (error) {
-      done(error.message);
+    error: function (err) {
+      done(err.message);
     }
   });
 };

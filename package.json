@@ -1,6 +1,6 @@
 {
   "name": "dmp-sass",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Get Sassy with dmp-sass for Documark!",
   "main": "index.js",
   "repository": {
